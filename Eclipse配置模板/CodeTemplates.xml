@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<templates>
+
+<template name="gettercomment" id="org.eclipse.jdt.ui.text.codetemplates.gettercomment" enabled="true" description="Comment for getter method" deleted="false" context="gettercomment_context" autoinsert="true">/** * @return the ${bare_field_name} */</template>
+
+<template name="settercomment" id="org.eclipse.jdt.ui.text.codetemplates.settercomment" enabled="true" description="Comment for setter method" deleted="false" context="settercomment_context" autoinsert="true">/** * @param ${param} the ${bare_field_name} to set */</template>
+
+<template name="constructorcomment" id="org.eclipse.jdt.ui.text.codetemplates.constructorcomment" enabled="true" description="Comment for created constructors" deleted="false" context="constructorcomment_context" autoinsert="true">/** * ${tags} */</template>
+
+<template name="filecomment" id="org.eclipse.jdt.ui.text.codetemplates.filecomment" enabled="true" description="Comment for created Java files" deleted="false" context="filecomment_context" autoinsert="false">/* * ${file_name} * classes : ${package_name}.${type_name} * @author 周小琦 * V 1.0.0 * Create at ${date} ${time} */</template>
+
+<template name="typecomment" id="org.eclipse.jdt.ui.text.codetemplates.typecomment" enabled="true" description="Comment for created types" deleted="false" context="typecomment_context" autoinsert="false">/** * ${package_name}.${type_name} * @author 周小琦 <br/> * ${tags} * create at ${date} ${time} */</template>
+
+<template name="fieldcomment" id="org.eclipse.jdt.ui.text.codetemplates.fieldcomment" enabled="true" description="Comment for fields" deleted="false" context="fieldcomment_context" autoinsert="true">/** * */</template>
+
+<template name="methodcomment" id="org.eclipse.jdt.ui.text.codetemplates.methodcomment" enabled="true" description="Comment for non-overriding methods" deleted="false" context="methodcomment_context" autoinsert="true">/** * ${tags} */</template>
+
+<template name="overridecomment" id="org.eclipse.jdt.ui.text.codetemplates.overridecomment" enabled="true" description="Comment for overriding methods" deleted="false" context="overridecomment_context" autoinsert="true">/* (non-Javadoc) * ${see_to_overridden} */</template>
+
+<template name="delegatecomment" id="org.eclipse.jdt.ui.text.codetemplates.delegatecomment" enabled="true" description="Comment for delegate methods" deleted="false" context="delegatecomment_context" autoinsert="true">/** * ${tags} * ${see_to_target} */</template>
+
+<template name="newtype" id="org.eclipse.jdt.ui.text.codetemplates.newtype" enabled="true" description="Newly created files" deleted="false" context="newtype_context" autoinsert="false">${filecomment} ${package_declaration} ${typecomment} ${type_declaration}</template>
+
+<template name="classbody" id="org.eclipse.jdt.ui.text.codetemplates.classbody" enabled="true" description="Code in new class type bodies" deleted="false" context="classbody_context" autoinsert="false">private static final String TAG = "${type_name}"; </template>
+
+<template name="interfacebody" id="org.eclipse.jdt.ui.text.codetemplates.interfacebody" enabled="true" description="Code in new interface type bodies" deleted="false" context="interfacebody_context" autoinsert="true"> </template>
+
+<template name="enumbody" id="org.eclipse.jdt.ui.text.codetemplates.enumbody" enabled="true" description="Code in new enum type bodies" deleted="false" context="enumbody_context" autoinsert="true"> </template>
+
+<template name="annotationbody" id="org.eclipse.jdt.ui.text.codetemplates.annotationbody" enabled="true" description="Code in new annotation type bodies" deleted="false" context="annotationbody_context" autoinsert="true"> </template>
+
+<template name="methodbody" id="org.eclipse.jdt.ui.text.codetemplates.methodbody" enabled="true" description="Code in created method stubs" deleted="false" context="methodbody_context" autoinsert="false">${body_statement}</template>
+
+<template name="constructorbody" id="org.eclipse.jdt.ui.text.codetemplates.constructorbody" enabled="true" description="Code in created constructor stubs" deleted="false" context="constructorbody_context" autoinsert="false">${body_statement}</template>
+
+<template name="getterbody" id="org.eclipse.jdt.ui.text.codetemplates.getterbody" enabled="true" description="Code in created getters" deleted="false" context="getterbody_context" autoinsert="false">return this.${field};</template>
+
+<template name="setterbody" id="org.eclipse.jdt.ui.text.codetemplates.setterbody" enabled="true" description="Code in created setters" deleted="false" context="setterbody_context" autoinsert="false">this.${field} = ${param};</template>
+
+</templates>
